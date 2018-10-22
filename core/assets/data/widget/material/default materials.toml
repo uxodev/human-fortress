@@ -1,0 +1,127 @@
+## default materials
+## natural materials
+[[material]]
+    name = "soil"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "stone"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "ore"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "gem"
+    multiplier = 100
+    property_tokens = []
+
+## plant materials
+# harvested from plants
+[[material]]
+    name = "wood"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "grain"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "vegetable"
+    multiplier = 100
+    property_tokens = ["raw"]
+[[material]]
+    name = "fiber"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "seed"
+    multiplier = 100
+    property_tokens = []
+# collected from plants
+[[material]]
+    name = "plant"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "fruit"
+    multiplier = 100
+    property_tokens = ["food"]
+[[material]]
+    name = "leaf"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "flower"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "bark"
+    multiplier = 100
+    property_tokens = []
+
+## unit materials
+# harvested from units
+[[material]]
+    name = "blood"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "skin"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "fat"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "guts"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "meat"
+    multiplier = 100
+    property_tokens = ["raw"]
+[[material]]
+    name = "bone"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "skull"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "horn"
+    multiplier = 100
+    property_tokens = []
+# collected from units
+[[material]]
+    name = "sentient"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "animal"
+    multiplier = 100
+    property_tokens = []
+[[material]]
+    name = "milk"
+    multiplier = 100
+    property_tokens = ["drink"]
+[[material]]
+    name = "venom"
+    multiplier = 100
+    property_tokens = []
+# made by units (dropped)
+[[material]]
+    name = "honey"
+    multiplier = 100
+    property_tokens = ["food"]
+[[material]]
+    name = "egg"
+    multiplier = 100
+    property_tokens = ["raw"]
+[[material]]
+    name = "manure"
+    multiplier = 100
+    property_tokens = []

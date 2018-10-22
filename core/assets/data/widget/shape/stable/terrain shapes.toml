@@ -1,0 +1,87 @@
+## natural terrain shapes
+[[shape]]
+    name = "floor"
+    class = "floor"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["blocks all"]
+[[shape]]
+    name = "wall"
+    class = "wall"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["blocks all", "implies floor same", "implies floor above"]
+[[shape]]
+    name = "ramp"
+    class = "wall"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["implies floor same", "enables ramping"]
+[[shape]]
+    name = "stair"
+    class = "wall"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["implies floor same", "enables stairing"]
+[[shape]]
+    name = "plant trunk"
+    class = "wall"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["blocks all", "implies floor same", "implies floor above", "sticky"]
+[[shape]]
+    name = "plant branch"
+    class = "wall"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["supports climb", "sticky"]
+
+## built terrain shapes
+[[shape]]
+    name = "door"
+    class = "wall"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["blocks light", "blocks liquid", "blocks solid", "blocks unit", "openable"]
+[[shape]]
+    name = "floor door"
+    class = "floor"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["blocks light", "blocks liquid", "blocks solid", "blocks unit", "openable"]
+[[shape]]
+    name = "window"
+    class = "wall"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["blocks gas", "blocks liquid", "blocks solid", "blocks unit"]
+[[shape]]
+    name = "floor window"
+    class = "floor"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["blocks gas", "blocks liquid", "blocks solid", "blocks unit"]
+[[shape]]
+    name = "grate"
+    class = "wall"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["blocks solid", "blocks unit"]
+[[shape]]
+    name = "floor grate"
+    class = "floor"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []
+    path_tokens = ["blocks solid", "blocks unit"]

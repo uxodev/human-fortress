@@ -1,0 +1,94 @@
+## natural source templates
+[[source2]]
+    name = "soil"
+    property_tokens = []
+    [[source2.source1]]
+        name = "loam"
+        color = "A0522D"
+        density = 10
+        value = 1
+        property_tokens = []
+    [[source2.source1]]
+        name = "clay"
+        color = "D2B48C"
+        density = 10
+        value = 1
+        property_tokens = []
+    [[source2.source1]]
+        name = "sand"
+        color = "F0E68C"
+        density = 10
+        value = 1
+        property_tokens = []
+
+[[source2]]
+    name = "stone"
+    property_tokens = []
+    [[source2.source1]]
+        name = "granite"
+        color = "2F353B"
+        density = 10
+        value = 10
+        property_tokens = []
+    [[source2.source1]]
+        name = "limestone"
+        color = "DFD8BF"
+        density = 10
+        value = 10
+        property_tokens = []
+    [[source2.source1]]
+        name = "marble"
+        color = "FFFFF0"
+        density = 10
+        value = 100
+        property_tokens = []
+    [[source2.source1]]
+        name = "turquoise"
+        color = "40E0D0"
+        density = 10
+        value = 500
+        property_tokens = []
+    [[source2.source1]]
+        name = "jade"
+        color = "00A86B"
+        density = 10
+        value = 500
+        property_tokens = []
+
+[[source2]]
+    name = "ore"
+    property_tokens = []
+    [[source2.source1]]
+        name = "copper"
+        color = "D2691E"
+        density = 50
+        value = 500
+        property_tokens = []
+    [[source2.source1]]
+        name = "silver"
+        color = "8A9597"
+        density = 50
+        value = 1000
+        property_tokens = []
+    [[source2.source1]]
+        name = "gold"
+        color = "DAA520"
+        density = 50
+        value = 1500
+        property_tokens = []
+
+[[source2]]
+    name = "gem"
+    property_tokens = []
+    [[source2.source1]]
+        name = "sapphire"
+        color = "191970"
+        density = 10
+        value = 500
+        property_tokens = []
+    [[source2.source1]]
+        name = "ruby"
+        color = "FF0000"
+        density = 10
+        value = 500
+        property_tokens = []

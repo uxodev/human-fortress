@@ -1,0 +1,57 @@
+## commodity shapes
+[[shape]]
+    name = "gas"
+    class = "fluid"
+    volume = 1
+    multiplier = 100
+    use_tokens = []
+    containable = "gas"
+[[shape]]
+    name = "liquid"
+    class = "fluid"
+    volume = 1
+    multiplier = 100
+    use_tokens = []
+    containable = "liquid"
+[[shape]]
+    name = "powder"
+    class = "fluid"
+    volume = 1
+    multiplier = 100
+    use_tokens = []
+    containable = "powder"
+[[shape]]
+    name = "pile" # cone of circles
+    class = "fluid"
+    volume = 1
+    multiplier = 100
+    use_tokens = []
+    containable = "pile"
+[[shape]]
+    name = "chunk" # crumbling circle
+    class = "commodity"
+    volume = 1
+    multiplier = 100
+    use_tokens = []
+    containable = "chunk"
+[[shape]]
+    name = "block" # cube
+    class = "commodity"
+    volume = 1
+    multiplier = 100
+    use_tokens = []
+    containable = "block"
+[[shape]]
+    name = "bar" # cylinder
+    class = "commodity"
+    volume = 1
+    multiplier = 100
+    use_tokens = []
+    containable = "bar"
+[[shape]]
+    name = "stack" # flat or square
+    class = "commodity"
+    volume = 1
+    multiplier = 100
+    use_tokens = []
+    containable = "stack"

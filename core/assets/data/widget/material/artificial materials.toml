@@ -1,0 +1,90 @@
+## artificial materials
+# transform materials
+[[material]]
+    name = "wicker"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "ceramic"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "glass"
+    multiplier = 200
+    property_tokens = []
+
+# raw materials
+[[material]]
+    name = "charcoal"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "leather"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "textile"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "paper"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "metal"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "salt"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "saltpeter"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "sulphur"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "blackpowder"
+    multiplier = 200
+    property_tokens = []
+
+# finished materials
+[[material]]
+    name = "bread"
+    multiplier = 200
+    property_tokens = ["food"]
+[[material]]
+    name = "soup"
+    multiplier = 200
+    property_tokens = ["food"]
+[[material]]
+    name = "beer"
+    multiplier = 200
+    property_tokens = ["drink"]
+[[material]]
+    name = "wine"
+    multiplier = 200
+    property_tokens = ["drink"]
+[[material]]
+    name = "mead"
+    multiplier = 200
+    property_tokens = ["drink"]
+[[material]]
+    name = "oil"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "flour"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "spice"
+    multiplier = 200
+    property_tokens = []
+[[material]]
+    name = "dye"
+    multiplier = 200
+    property_tokens = []

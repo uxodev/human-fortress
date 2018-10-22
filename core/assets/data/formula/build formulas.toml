@@ -1,0 +1,71 @@
+["build floor"]
+    shapes = [
+       "chunk", "block", "bar",
+    ]
+    materials = [
+        "loam", "clay", "sand", "stone", "metal", "wood", "adobe",
+    ]
+    items = [
+        {shape="floor door", amount="1"},
+        {shape="floor window", amount="1"},
+    ]
+
+["build wall"]
+    shapes = [
+       "chunk", "block", "bar",
+    ]
+    materials = [
+        "loam", "clay", "sand", "stone", "metal", "wood", "adobe",
+    ]
+    items = [
+        {shape="door", amount="1"},
+        {shape="window", amount="1"},
+    ]
+
+["build furniture"]
+    items = [
+        {shape="bed", amount="1"},
+    ]
+
+["build furniture container"]
+    items = [
+        {shape="pithos", amount="1"},
+    ]
+
+#[[build]]
+#    name = "build floor"
+#    shapes = [
+#       "chunk", "block", "bar",
+#    ]
+#    materials = [
+#        "loam", "clay", "sand", "stone", "metal", "wood", "adobe",
+#    ]
+#    items = [
+#        {shape="floor door", amount="1"},
+#        {shape="floor window", amount="1"},
+#    ]
+#
+#[[build]]
+#    name = "build wall"
+#    shapes = [
+#       "chunk", "block", "bar",
+#    ]
+#    materials = [
+#        "loam", "clay", "sand", "stone", "metal", "wood", "adobe",
+#    ]
+#    items = [
+#        {shape="door", amount="1"},
+#        {shape="window", amount="1"},
+#    ]
+#
+#[[build]]
+#    name = "build furniture"
+#    items = [
+#        {shape="bed", amount="1"},
+#    ]
+#
+#[[build]]
+#    name = "build furniture container"
+#    items = [
+#        {shape="pithos", amount="1"},
+#    ]

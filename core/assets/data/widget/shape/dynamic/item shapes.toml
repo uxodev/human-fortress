@@ -1,0 +1,162 @@
+## item shapes
+## with use_tokens used by the game
+# animal, plant
+[[shape]]
+    name = "corpse"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["corpse"]
+    containable = "corpse"
+[[shape]]
+    name = "bloodless corpse"
+    class = "item"
+    use_tokens = ["corpse"]
+    containable = "corpse"
+[[shape]]
+    name = "skeleton"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["corpse"]
+    containable = "corpse"
+[[shape]]
+    name = "harvest"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["harvest"]
+    containable = "bar"
+
+[[shape]]
+    name = "skull"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = []
+    containable = "stack"
+[[shape]]
+    name = "meat"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = []
+    containable = "stack"
+
+# food/drink
+[[shape]]
+    name = "loaf"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = []
+    containable = "stack"
+
+# worn
+[[shape]]
+    name = "shirt"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["clothing", "covers torso"]
+    containable = "stack"
+[[shape]]
+    name = "bracelet"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["jewlery", "covers hand"]
+    containable = "pile"
+[[shape]]
+    name = "helmet"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["military", "armor", "covers head"] # all armor, weapon, ammo, is military, but military useful as larger category
+    containable = "stack"
+[[shape]]
+    name = "shield"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["military", "armor"] # held = need graspable # everything is held
+    containable = "stack"
+[[shape]]
+    name = "spear"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["military", "weapon"]
+    containable = "stack"
+[[shape]]
+    name = "arrow"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["military", "ammo"]
+    containable = "bar"
+
+## with use_tokens used with action searches
+# tools
+[[shape]]
+    name = "pot"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["tool", "tools food"] # need use for tool
+    containable = "stack"
+
+# books
+[[shape]]
+    name = "book"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["book"]
+    containable = "stack"
+
+# instruments
+[[shape]]
+    name = "lyre"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["instrument", "string", "stationary"]
+    containable = "stack"
+[[shape]]
+    name = "flute"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["instrument", "wind"]
+    containable = "stack"
+
+# toys
+[[shape]]
+    name = "figurine"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["toy", "child"]
+    containable = "stack"
+[[shape]]
+    name = "wheeled pull toy"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["toy", "child", "actuating"]
+    containable = "stack"
+[[shape]]
+    name = "die"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["game", "adult", "4 players", "stationary"]
+    containable = "pile"
+[[shape]]
+    name = "senet"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["game", "adult", "2 players", "stationary"]
+    containable = "stack"

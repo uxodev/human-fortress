@@ -1,0 +1,13 @@
+## furniture shapes
+[[shape]]
+    name = "bed"
+    class = "furniture"
+    volume = 1000
+    multiplier = 100
+    use_tokens = ["sleep"]
+[[shape]]
+    name = "table"
+    class = "furniture"
+    volume = 1000
+    multiplier = 100
+    use_tokens = []

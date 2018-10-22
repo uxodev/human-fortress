@@ -1,0 +1,36 @@
+## part article shapes
+[[shape]]
+    name = "rope"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["part"]
+    containable = ""
+[[shape]]
+    name = "rope"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["part"]
+    containable = ""
+[[shape]]
+    name = "handle"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["part"]
+    containable = ""
+[[shape]]
+    name = "catapult base"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["part"]
+    containable = ""
+[[shape]]
+    name = "catapult arm"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["part"]
+    containable = ""

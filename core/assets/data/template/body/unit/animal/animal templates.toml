@@ -1,0 +1,67 @@
+## animal templates
+[[animal]]
+    name = "dog"
+    [animal.mind]
+        domestication = "domestic"
+        eat = "hunt any"
+        drink = "stagnant"
+        defense = "attack"
+    [animal.body]
+        color = "8b4513ff"
+        awake = "diurnal"
+        reproduction = "live"
+        [[animal.body.gender]]
+            gender = "male"
+            size = "330"
+        [[animal.body.gender]]
+            gender = "female"
+            size = "300"
+        [animal.body.gait]
+            walk = "24, 12, 8, 4"
+            swim = "48, 24, 16, 8"
+    [animal.drop]
+        [[animal.drop.item]]
+            source = {name = "corpse", color = "body", density = 20, value = 100, property_tokens = []}
+            material = "animal"
+            shape = "corpse"
+            amount = 1
+            part_template = "animal corpse"
+            [[animal.drop.item.part]]
+                source = {name = "skull", color = "ffffffff", density = 10, value = 1000, property_tokens = []}
+                material = "bone"
+                shape = "skull"
+                amount = 1
+
+[[animal]]
+    name = "cat"
+    [animal.mind]
+        domestication = "domestic"
+        eat = "hunt smaller"
+        drink = "flowing"
+        defense = "attack"
+    [animal.body]
+        color = "d2b48cff"
+        awake = "nocturnal"
+        reproduction = "live"
+        [[animal.body.gender]]
+            gender = "male"
+            size = "220"
+        [[animal.body.gender]]
+            gender = "female"
+            size = "200"
+        [animal.body.gait]
+            walk = "24, 12, 8, 4"
+            climb = "24, 12, 8, 4"
+            swim = "96, 48, 24, 16"
+    [animal.drop]
+        [[animal.drop.item]]
+            source = {name = "corpse", color = "body", density = 20, value = 100, property_tokens = []}
+            material = "animal"
+            shape = "corpse"
+            amount = 1
+            part_template = "animal corpse"
+            [[animal.drop.item.part]]
+                source = {name = "meat", color = "default", density = 1, value = 100, property_tokens = ["stringy"]}
+                material = "meat"
+                shape = "block"
+                amount = 1 # "animal"

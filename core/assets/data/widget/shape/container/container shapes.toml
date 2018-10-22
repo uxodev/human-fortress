@@ -1,0 +1,126 @@
+## item container shapes
+# transport
+[[shape]]
+    name = "bucket"
+    class = "item container"
+    volume = 10
+    multiplier = 200
+    use_tokens = ["transport"]
+    contains = ["liquid"]
+    capacity = 10
+[[shape]]
+    name = "bag"
+    class = "item container"
+    volume = 10
+    multiplier = 200
+    use_tokens = ["transport"]
+    contains = ["powder", "pile"]
+    capacity = 10
+[[shape]]
+    name = "bin"
+    class = "item container"
+    volume = 10
+    multiplier = 200
+    use_tokens = ["transport"]
+    contains = ["pile", "chunk", "bar", "stack"]#, "block"]
+    capacity = 10
+# storage, shipping
+[[shape]]
+    name = "barrel"
+    class = "item container"
+    volume = 100
+    multiplier = 200
+    use_tokens = ["storage", "shipping"]
+    contains = ["liquid", "powder", "pile"]
+    capacity = 100
+[[shape]]
+    name = "crate"
+    class = "item container"
+    volume = 1000
+    multiplier = 200
+    use_tokens = ["storage", "shipping"]
+    contains = ["chunk", "bar", "stack"]#, "block"]
+    capacity = 1000
+[[shape]]
+    name = "coffin"
+    class = "item container"
+    volume = 500
+    multiplier = 200
+    use_tokens = ["storage"]
+    contains = ["corpse"]
+    capacity = 500
+[[shape]]
+    name = "giant coffin"
+    class = "item container"
+    volume = 1000
+    multiplier = 200
+    use_tokens = ["storage"]
+    contains = ["corpse"]
+    capacity = 1000
+[[shape]]
+    name = "cage"
+    class = "item container"
+    volume = 1000
+    multiplier = 200
+    use_tokens = ["storage"]
+    contains = ["animal", "sentient"]
+    capacity = 1000
+[[shape]]
+    name = "giant cage"
+    class = "item container"
+    volume = 2000
+    multiplier = 200
+    use_tokens = ["storage"]
+    contains = ["animal", "sentient"]
+    capacity = 2000
+# accessory
+[[shape]]
+    name = "pouch"
+    class = "item container"
+    volume = 10
+    multiplier = 200
+    use_tokens = ["accessory", "personal"]
+    contains = ["pile"]
+    capacity = 10
+[[shape]]
+    name = "waterskin"
+    class = "item container"
+    volume = 10
+    multiplier = 200
+    use_tokens = ["accessory", "military"]
+    contains = ["liquid"]
+    capacity = 10
+[[shape]]
+    name = "backpack"
+    class = "item container"
+    volume = 10
+    multiplier = 200
+    use_tokens = ["accessory", "military"]
+    contains = ["pile", "stack"]
+    capacity = 10
+[[shape]]
+    name = "quiver"
+    class = "item container"
+    volume = 24
+    multiplier = 200
+    use_tokens = ["accessory", "military"]
+    contains = ["bar"]
+    capacity = 24
+
+## furniture containers
+[[shape]]
+    name = "pithos"
+    class = "furniture container"
+    volume = 500
+    multiplier = 200
+    use_tokens = ["storage"]
+    contains = ["powder", "pile"]
+    capacity = 500
+[[shape]]
+    name = "dresser"
+    class = "furniture container"
+    volume = 200
+    multiplier = 200
+    use_tokens = ["storage", "personal"]
+    contains = ["powder", "pile"]
+    capacity = 200

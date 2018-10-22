@@ -1,0 +1,49 @@
+## furniture container prefab item shapes
+[[shape]]
+    name = "pithos"
+    class = "item"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["prefab", "furniture container"]
+    containable = ""
+[[shape]]
+    name = "dresser"
+    volume = 100
+    multiplier = 100
+    class = "item"
+    use_tokens = ["prefab", "furniture container"]
+    containable = ""
+
+## furniture prefab item shapes
+[[shape]]
+    name = "bed"
+    volume = 100
+    multiplier = 100
+    class = "item"
+    use_tokens = ["prefab", "furniture"]
+    containable = ""
+
+## floor prefab item shapes
+[[shape]]
+    name = "floor door"
+    volume = 100
+    multiplier = 100
+    class = "item"
+    use_tokens = ["prefab", "floor"]
+    containable = "stack"
+
+## wall prefab item shapes
+[[shape]]
+    name = "door"
+    volume = 100
+    multiplier = 100
+    class = "item"
+    use_tokens = ["prefab", "wall"]
+    containable = "stack"
+[[shape]]
+    name = "window"
+    volume = 100
+    multiplier = 100
+    class = "item"
+    use_tokens = ["prefab", "wall"]
+    containable = "stack"

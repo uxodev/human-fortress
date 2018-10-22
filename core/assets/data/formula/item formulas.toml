@@ -1,0 +1,173 @@
+[[formula]]
+    name = ""
+    [formula.output]
+        [formula.output.match] # matches input items to output parts
+            item = {shape = "", material = "", source2 = "", source1 = "", amount = ""}
+            parts = [
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+            ]
+            container = {shape = "", material = "", source2 = "", source1 = "", amount = ""} # optional, required for fluids
+    [[formula.input]]
+        area = ""
+        [formula.input.match]
+            items = [
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+                {token = "", amount = ""},
+            ]
+[[formula]]
+    name = ""
+    [formula.output]
+        [formula.output.create] # creates item
+            item = {shape = "", material = "", source2 = "", source1 = "", amount = ""}
+            parts = [ # optional
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+            ]
+            container = {token = "", amount = ""} # optional, required for fluids
+    [[formula.input]]
+        area = ""
+        [formula.input.destroy] # optional, required if input indicates "input"
+            items = [
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+                {token = "", amount = ""},
+            ]
+        [formula.input.require] # optional, not changed or destroyed
+            items = [
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+                {token = "", amount = ""},
+            ]
+[[formula]]
+    name = ""
+    [formula.output]
+        [formula.output.extract] # removes parts into their own items
+            parts = [
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+            ]
+            containers = [ # optional, required for fluids
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+                {shape = "", material = "", source2 = "", source1 = "", amount = ""},
+            ]
+        [formula.output.remainder] # puts remaining parts after extraction into item
+            item = {shape = "", material = "", source2 = "", source1 = "", amount = ""}
+            parts = [ # optional
+                # any remaining parts from option go here, can add more parts
+            ]
+    [[formula.input]]
+        area = ""
+        [formula.input.source] # source should have at least one of the extract parts
+            item = {shape = "", material = "", source2 = "", source1 = "", amount = ""}
+    [[formula.input]]
+        area = ""
+        [formula.input.source]
+            item = {token = "", amount = ""}
+
+#---- reserved: input, any, transform
+[[formula]]
+    name = "create rope"
+    [formula.output]
+        [formula.output.match]
+            item = {shape = "rope", material = "part", source2 = "part", source1 = "part", amount = "1"}
+            parts = [
+                {shape = "rope", material = "input", source2 = "input", source1 = "input", amount = "1"},
+            ]
+    [[formula.input]]
+        area = "wood shop"
+        [formula.input.match]
+            items = [
+                {shape = "harvest", material = "fiber", source2 = "any", source1 = "any", amount = "10"},
+            ]
+    [[formula.input]]
+        area = "wood shop"
+        [formula.input.match]
+            items = [
+                {shape = "transform", material = "wicker", source2 = "any", source1 = "any", amount = "10"},
+            ]
+
+[[formula]]
+    name = "create bucket"
+    [formula.output]
+        [[formula.output.match]]
+            item = {shape = "bucket", material = "part", source2 = "part", source1 = "part", amount = "1"}
+            parts = [
+                {shape = "bucket", material = "input", source2 = "input", source1 = "input", amount = "1"},
+                {shape = "handle", material = "input", source2 = "input", source1 = "input", amount = "1"},
+            ]
+    [[formula.input]]
+        area = "wood shop"
+        [[formula.input.match]]
+            items = [
+                {shape = "stack", material = "wood", source2 = "any", source1 = "any", amount = "10"},
+                {shape = "rope", material = "any", source2 = "any", source1 = "any", amount = "1"},
+            ]
+    [[formula.input]]
+        area = "leather shop"
+        [[formula.input.match]]
+            items = [
+                {shape = "sheet", material = "leather", source2 = "any", source1 = "any", amount = "10"},
+                {shape = "strap", material = "leather", source2 = "any", source1 = "any", amount = "1"},
+            ]
+    [[formula.input]]
+        area = "metal shop"
+        [[formula.input.match]]
+            items = [
+                {shape = "sheet", material = "metal", source2 = "any", source1 = "any", amount = "10"},
+                {shape = "bar", material = "metal", source2 = "any", source1 = "any", amount = "10"},
+            ]
+
+[[formula]]
+    name = "drain blood"
+    [formula.output]
+        [formula.output.extract]
+            parts = [
+                {shape = "liquid", material = "blood", source2 = "source", source1 = "source", amount = "source"},
+            ]
+            container = [
+                "bucket",
+            ]
+        [formula.output.remainder]
+            item = {shape = "bloodless corpse", material = "source", source2 = "source", source1 = "source", amount = "1"}
+            parts = [
+            ]
+    [[formula.input]]
+        area = "butcher shop"
+        [[formula.input.target]]
+            item = {shape = "corpse", material = "animal", source2 = "any", source1 = "any", amount = "1"}
+
+[[formula]]
+    name = "prepare corpse"
+    [formula.output]
+        [[formula.output.extract]]
+            parts = [
+                {shape = "stack", material = "skin", source2 = "input", source1 = "input", amount = "input"},
+                {shape = "liquid", material = "fat", source2 = "input", source1 = "input", amount = "input"},
+                {shape = "liquid", material = "guts", source2 = "input", source1 = "input", amount = "input"},
+                {shape = "block", material = "meat", source2 = "input", source1 = "input", amount = "input"},
+            ]
+            container = [
+                "",
+                "bucket",
+                "bucket",
+                "bin",
+            ]
+#            container = [[
+#                {},
+#                {shape = "bucket", material = "any", source2 = "any", source1 = "any", amount = "1"},
+#                {shape = "bucket", material = "any", source2 = "any", source1 = "any", amount = "1"},
+#                {shape = "bin", material = "any", source2 = "any", source1 = "any", amount = "1"},
+#            ]]
+        [[formula.output.remainder]]
+            item = {shape = "skeleton", material = "item", source2 = "item", source1 = "item", amount = "1"}
+            parts = [
+            ]
+    [[formula.input]]
+        area = "butcher shop"
+        [[formula.input.source]]
+            item = {shape = "corpse", material = "animal", source2 = "any", source1 = "any", amount = "1"}
+    [[formula.input]]
+        area = "butcher shop"
+        [[formula.input.source]]
+            item = {shape = "bloodless corpse", material = "animal", source2 = "any", source1 = "any", amount = "1"}
+
+

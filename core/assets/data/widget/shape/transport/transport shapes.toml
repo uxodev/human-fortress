@@ -1,0 +1,27 @@
+## vehicle shapes
+[[shape]]
+    name = "wheelbarrow"
+    class = "vehicle"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["transport"]
+    contains_quantity = "1"
+    contains_volume = "100000"
+
+[[shape]]
+    name = "cart"
+    class = "vehicle"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["shipping"]
+    contains_quantity = "10000"
+    contains_volume = "100000"
+
+[[shape]]
+    name = "catapult"
+    class = "vehicle"
+    volume = 100
+    multiplier = 100
+    use_tokens = ["military", "weapon"]
+    contains_quantity = "0"
+    contains_volume = "0"

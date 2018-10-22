@@ -1,0 +1,37 @@
+[[part_template]] # fill item with these parts, except those replaced by having the same source2
+    name = "animal corpse"
+    [[part_template.part]]
+        source = {name = "blood", color = "ff341cff", density = 1, value = 10, property_tokens = []}
+        material = "blood"
+        shape = "liquid"
+        amount = "body"
+    [[part_template.part]]
+        source = {name = "skin", color = "body", density = 1, value = 10, property_tokens = []}
+        material = "skin"
+        shape = "stack"
+        amount = "body"
+    [[part_template.part]]
+        source = {name = "fat", color = "ffff00ff", density = 1, value = 10, property_tokens = []}
+        material = "fat"
+        shape = "liquid"
+        amount = "body"
+    [[part_template.part]]
+        source = {name = "guts", color = "ffff00ff", density = 1, value = 10, property_tokens = []}
+        material = "guts"
+        shape = "liquid"
+        amount = "body"
+    [[part_template.part]]
+        source = {name = "meat", color = "ff0000ff", density = 1, value = 10, property_tokens = []}
+        material = "meat"
+        shape = "block"
+        amount = "body"
+    [[part_template.part]]
+        source = {name = "bone", color = "ffffffff", density = 1, value = 10, property_tokens = []}
+        material = "bone"
+        shape = "bar"
+        amount = "body"
+    [[part_template.part]]
+        source = {name = "skull", color = "ffffffff", density = 1, value = 10, property_tokens = []}
+        material = "bone"
+        shape = "skull"
+        amount = "1"
