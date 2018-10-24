@@ -34,6 +34,6 @@ public class EnclosedZones {
 
     public String count() {
         return "Areas:" + "\n" +
-                "areas:" + areas.size() + "\n";
+                "Areas:" + areas.size() + "\n";
     }
 }
